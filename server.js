@@ -2,10 +2,11 @@
 const express = require('express'); // HAVE TO npm install express
 const bodyParser = require('body-parser');
 const mysql = require('mysql'); // HAVE TO npm install mysql
+const identify = require('./password.js')
 
 // constants
 const app = express();
-const port = 88;
+const port = 80;
 
 // middleware
 const urlEncodedParser = bodyParser.urlencoded({extended: false});
@@ -107,8 +108,8 @@ app.listen(port, function() {
 // connection!
 var database = mysql.createConnection({
   host: 'localhost', // ip address to the host of the mysql database
-  user: 'root', // the thing in ____@_______ (the user to access/edit database)
-  password: 'Gerberserver',
+  user: identify.user, // the thing in ____@_______ (the user to access/edit database)
+  password: identify.password,
   database: 'blog'
 });
 
