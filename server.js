@@ -5,7 +5,7 @@ const mysql = require('mysql'); // HAVE TO npm install mysql
 
 // constants
 const app = express();
-const port = 80;
+const port = 88;
 
 // middleware
 const urlEncodedParser = bodyParser.urlencoded({extended: false});
