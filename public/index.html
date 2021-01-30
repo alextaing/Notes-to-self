@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'><link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="blogpostScript.js"></script>
+    <title>My Blog</title>
+  </head>
+  <body>
+    <section class="title">
+      <header>
+        <section id="blogname">Notes to Self</section>
+      </header>
+      <section id="blogsub">Leave a note for yourself... but mostly for Alex.</section>
+    </section>
+    <section class="group">
+      <nav>
+        <p id="toc">Table of Contents:<br></p>
+        <div class="scroll">
+          <div class='table'>
+          </div>
+        </div>
+        <a id='backtotop' href="#blogname">Back to Top</a>
+      </nav>
+      <section class="posts">
+        <section class="group">
+          <h1 class="postinstruction">Write a Post!</h1>
+          <section class="Group">
+            <section id="titleinstruction">
+              <h1>Title:</h1>
+            </section>
+            <input id="posttitle" type="text" name="title">
+          </section>
+          <textarea class="group" id="blogpost" name="blogpost"></textarea>
+          <button class="submitbutton" type="submit" value="submit" onclick="submitButton()">Post!</button>
+          <p class="submitSuccessMessage"></p>
+        </section>
+        <article>
+          <div class="ajaxSend">
+          </div>
+        </article>
+      </section>
+    </section>
+    <footer>
+      Leave me a note! Make it stacatto and dolce!
+    </footer>
+  </body>
+</html>

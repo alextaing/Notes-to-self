@@ -1,0 +1,455 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*******************************************************************************
+
+Title
+
+*******************************************************************************/
+
+.title {
+  background-color: #7D97AB;
+  color: white;
+  border-radius: 20px;
+  font-family: 'Aldrich';
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#blogname {
+  font-size: 60px;
+  margin: 10px 10px 10px 10px;
+}
+
+#blogsub {
+  font-size: 20px;
+  margin: 10px 10px 10px 10px;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.group:after {
+  clear: both;
+}
+
+/******************************************************************************
+
+Table of Contents
+
+*******************************************************************************/
+
+nav {
+  position: -webkit-sticky; /* to fix, make position fixed*/
+  position: sticky;
+  top: 30px;
+  float: left;
+  background-color: #7D97AB;
+  border-radius: 20px;
+  margin: 20px 1%;
+  padding: 20px 1%;
+  width: 20%;
+  height: 600px;
+
+  color: white;
+  font-family: 'ABeeZee';
+  font-size: 17px;
+  padding: 1%;
+}
+
+#backtotop {
+  font-family: 'Aldrich';
+  font: 18px;
+  margin-left: 2%;
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 10px;
+  text-align: center;
+}
+
+#backtotop:hover {
+  color: #96B7CF;
+}
+
+.scroll {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  direction : rtl;
+
+
+  float: left;
+  border-radius: 20px;
+  margin: 20px 1%;
+  width: 100%;
+  height: 85%;
+}
+
+#toc {
+  direction : ltr;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Aldrich'
+}
+
+.table {
+  direction : ltr;
+}
+
+.tablefont {
+  color: white;
+  font-family: 'ABeeZee';
+  font-size: 17px;
+  text-decoration: none;
+  display: block;
+  margin: 10px;
+}
+
+.tablefont:hover {
+  color: #96B7CF;
+}
+
+/*******************************************************************************
+
+Posts
+
+*******************************************************************************/
+
+textarea {
+  padding: 10px;
+}
+
+input {
+  padding: 5px;
+}
+
+.posts {
+  float: left;
+  background-color: #7D97AB;
+  border-radius: 20px;
+  margin: 20px 2%;
+  padding: 20px 10px;
+  width: 68%;
+  display: inline-block;
+
+  color: white;
+  font-family: 'ABeeZee';
+  font-size: 17px;
+}
+
+#titleinstruction {
+  float: left;
+  font-size: 18px;
+  text-align: left;
+  font-family: 'Aldrich';
+  margin: 2% 1% 0 2%;
+  display: block;
+}
+
+#posttitle {
+  float: left;
+  background-color: #96B7CF;
+  border-radius: 8px;
+  margin: 2% 2% 0 0;
+  display: block;
+  width: 70%;
+
+  color: white;
+  font-family: 'ABeeZee';
+  font-size: 18px;
+  resize: none;
+  height: 1em;
+  outline: none;
+}
+
+#blogpost {
+  float: left;
+  background-color: #96B7CF;
+  border-radius: 8px;
+  margin: 2%;
+  display: flex;
+  width: 95%;
+
+  color: white;
+  font-family: 'ABeeZee';
+  font-size: 17px;
+  flex: auto;
+  resize: none;
+  height: 8em;
+  outline: none;
+}
+
+.blogpost {
+  float: left;
+  background-color: #96B7CF;
+  border-radius: 8px;
+  padding: 4px;
+  margin: 2%;
+  display: flex;
+  width: 95%;
+
+  color: white;
+  font-family: 'ABeeZee';
+  font-size: 17px;
+  flex: auto;
+  resize: none;
+  height: 8em;
+  outline: none;
+}
+
+.posttitle {
+  float: left;
+  background-color: #96B7CF;
+  border-radius: 8px;
+  margin: 2% 2% 0 0;
+  padding: 4px;
+  display: block;
+  width: 70%;
+
+  color: white;
+  font-family: 'ABeeZee';
+  font-size: 18px;
+  resize: none;
+  height: 1em;
+  outline: none;
+}
+
+.pastposts {
+  width: auto;
+}
+
+.submittedPost {
+  float: left;
+  background-color: #96B7CF;
+  border-radius: 8px;
+  margin: 2%;
+  display: block;
+  width: 94%;
+
+  color: white;
+  font-family: 'ABeeZee';
+  font-size: 17px;
+  flex: auto;
+  padding: 1%;
+}
+
+.postinstruction {
+  font-family: 'Aldrich';
+  font: 18px;
+  margin-left: 2%;
+}
+
+.submitbutton {
+  float: right;
+  background: #96B7CF;
+  color: white;
+  border-color: gray;
+  border-width: 2px;
+  border-radius: 4px;
+  margin-right: 2%;
+  height: 22px;
+  font-family: 'Aldrich';
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.submitSuccessMessage {
+  float: right;
+  color: white;
+  border-width: 2px;
+  border-radius: 4px;
+  margin-right: 2%;
+  margin-top: 5px;
+  height: 22px;
+  font-family: 'Aldrich';
+  font-size: 14px;
+}
+
+.submittedTitle {
+  clear: both;
+  float: left;
+  color: white;
+  border-width: 2px;
+  border-radius: 4px;
+  margin-right: 2%;
+  margin-top: 5px;
+  height: auto;
+  font-family: 'Aldrich';
+  font-size: 20px;
+  display:block;
+}
+
+.submittedDate {
+  clear: both;
+  float: left;
+  color: white;
+  border-width: 2px;
+  border-radius: 4px;
+  margin-right: 2%;
+  margin-top: 5px;
+  height: 22px;
+  font-family: 'Aldrich';
+  font-size: 15px;
+  display:block;
+}
+
+.justsubmitted {
+  clear: both;
+  float: left;
+  color: white;
+  border-width: 2px;
+  border-radius: 4px;
+  margin-right: 2%;
+  margin-top: 5px;
+  margin-botton: 5px;
+  font-family: 'ABeeZee';
+  font-size: 15px;
+  display:block;
+  white-space: pre-wrap;
+  width: 90%;
+}
+
+.justsubmitted::after{
+  margin-bottom: 20px;
+}
+
+
+body {
+  background-color: #96B7CF;
+}
+
+/*******************************************************************************
+
+Comments
+
+*******************************************************************************/
+
+.comments { /* the actual past comments (date and text)*/
+  float: left;
+  background-color: #96B7CF;
+  border-radius: 8px;
+  border: 2px solid #7D97AB;
+  margin: 2%;
+  display: block;
+  width: 94%;
+
+  color: white;
+  font-family: 'ABeeZee';
+  font-size: 17px;
+  flex: auto;
+  padding: 1%;
+}
+
+.commentArea {/* the block that contains all things comment*/
+  float: left;
+  display: block;
+  padding: 1% 1%;
+  width: 94%;
+}
+
+.commentBox { /* where you type the comment*/
+  float: left;
+  background-color: #96B7CF;
+  border-radius: 8px;
+  margin: 2%;
+  display: flex;
+  width: 100%;
+
+  color: white;
+  font-family: 'ABeeZee';
+  font-size: 17px;
+  flex: auto;
+  resize: none;
+  height: 8em;
+  outline: none;
+  padding: 10px;
+}
+
+/*******************************************************************************
+
+Footer
+
+*******************************************************************************/
+
+footer{
+  background-color: #7D97AB;
+  color: white;
+  border-radius: 20px;
+  font-family: 'Aldrich';
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+  width: 97%;
+}
+
+/*******************************************************************************
+
+Scrollbars
+
+*******************************************************************************/
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
